@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri</title>
+    <link rel="stylesheet" href="galery.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar menu strat -->
+      <h2>Galeri</h2>
+      <div class="galeri-nav">
+        <ul class="filter">
+          <li class="active">Galeri Sekolah</li>
+          <li>Galeri Prestasi</li>
+          <li>Galeri Extrakulikuler</li>
+        </ul>
+      </div>
+      <!-- navbar menu end -->
+      <!-- content gambar start -->
+      <div class="gambar-container" data-filter="galeri sekolah">
+        <div class="content">
+          <div class="gambar"><img src="img/sekolah1.jpg" /></div>
+          <div class="gambar"><img src="img/sekolah2.jpg" /></div>
+          <div class="gambar"><img src="img/sekolah3.jpg" /></div>
+          <div class="gambar"><img src="img/sekolah4.jpg" /></div>
+          <div class="gambar"><img src="img/silat.jpg" /></div>
+          <div class="gambar"><img src="img/berkuda.jpg" /></div>
+        </div>
+      </div>
+
+      <div class="gambar-container" data-filter="galeri prestasi">
+        <div class="content">
+          <div class="gambar"><img src="img/prestasi1.jpg" /></div>
+          <div class="gambar"><img src="img/prestasi2.jpg" /></div>
+          <div class="gambar"><img src="img/prestasi3.jpg" /></div>
+          <div class="gambar"><img src="img/prestasi4.jpg" /></div>
+          <div class="gambar"><img src="img/sekolah3.jpg" /></div>
+          <div class="gambar"><img src="img/sekolah4.jpg" /></div>
+        </div>
+      </div>
+
+      <div class="gambar-container" data-filter="galeri extrakulikuler">
+        <div class="content">
+          <div class="gambar"><img src="img/berenang.jpg" /></div>
+          <div class="gambar"><img src="img/berkuda.jpg" /></div>
+          <div class="gambar"><img src="img/panah.jpg" /></div>
+          <div class="gambar"><img src="img/futsal.jpg" /></div>
+          <div class="gambar"><img src="img/habsy.jpeg" /></div>
+          <div class="gambar"><img src="img/berkuda.jpg" /></div>
+        </div>
+      </div>
+      <!-- content gambar end -->
+      <!-- popup gambar start-->
+      <div class="popup-gambar">
+        <span>&times;</span>
+        <img src="img/berenang.jpg" />
+      </div>
+      <!-- poup gambar end -->
+    </div>
+    <script src="galeri.js"></script>
+  </body>
+</html>

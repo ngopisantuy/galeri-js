@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2.5em;
+  position: relative;
+  margin: 2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  color: #006666;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 3px;
+  background-color: #006666;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 4rem;
+  }
+
+  50% {
+    width: 8rem;
+  }
+
+  100% {
+    width: 4rem;
+  }
+}
+
+.filter {
+  width: fit-content;
+  height: auto;
+  margin: 0 auto 1rem auto;
+  display: inline-flex;
+  justify-content: center;
+  background-color: #acffe3;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px #006666;
+}
+
+.filter li {
+  list-style: none;
+  padding: 0.5rem 3.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #006666;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container .gambar-container .gambar {
+  height: 250px;
+  width: 350px;
+  border: 10px solid #050505;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  overflow: hidden;
+}
+.container .gambar-container .gambar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.container .gambar-container .gambar:hover img {
+  transform: scale(1.1);
+}
+
+.container .popup-gambar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.container .popup-gambar img {
+  position: absolute;
+  top: 23rem;
+  left: 40rem;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  border-radius: 5px;
+  border: 5px solid #060606;
+  object-fit: cover;
+}
+.container .popup-gambar span {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 855px) {
+  .filter {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #acffe3;
+    border-radius: 0.5rem;
+  }
+
+  .filter li {
+    list-style: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .isi-content > img {
+    border-radius: 7%;
+    height: 20rem;
+    width: 30%;
+  }
+
+  .gambar {
+    height: 10rem;
+    border-radius: 5%;
+  }
+
+  .gambar > img {
+    width: 8rem;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 5%;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .filter {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #acffe3;
+    border-radius: 0.5rem;
+  }
+
+  .filter li {
+    list-style: none;
+    padding: 0.5rem 2rem;
+    font-size: 0.2em;
+    cursor: pointer;
+  }
+
+  .isi-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .isi-content > img {
+    border-radius: 7%;
+    height: 25rem;
+    width: 100%;
+  }
+
+  .deskripsi {
+    text-align: justify;
+    padding: 1rem 1rem;
+    font-size: 1em;
+  }
+
+  .gambar {
+    height: 12rem;
+    border-radius: 5%;
+  }
+
+  .gambar > img {
+    width: 10rem;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 5%;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .filter {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #acffe3;
+    border-radius: 0.5rem;
+  }
+
+  .filter li {
+    list-style: none;
+    padding: 0.5rem 2rem;
+    font-size: 0.2em;
+    cursor: pointer;
+  }
+  .isi-content > img {
+    border-radius: 7%;
+    height: 20rem;
+    width: 100%;
+  }
+
+  .gambar {
+    height: 5rem;
+    border-radius: 5%;
+  }
+
+  .gambar > img {
+    width: 3rem;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .filter {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #acffe3;
+    border-radius: 0.5rem;
+  }
+
+  .filter li {
+    list-style: none;
+    padding: 0.5rem 2rem;
+    font-size: 0.2em;
+    cursor: pointer;
+  }
+  .isi-content > img {
+    border-radius: 7%;
+    height: 18rem;
+    width: 100%;
+  }
+
+  .gambar {
+    height: 10rem;
+    border-radius: 5%;
+  }
+
+  .gambar > img {
+    width: 8rem;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 5%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .isi-content > img {
+    border-radius: 7%;
+    height: 15rem;
+    width: 100%;
+  }
+
+  .gambar {
+    height: 8rem;
+    border-radius: 5%;
+  }
+
+  .gambar > img {
+    width: 6rem;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 5%;
+  }
+}
