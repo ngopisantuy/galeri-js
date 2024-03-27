@@ -300,9 +300,26 @@ h2::before {
 }
 
 @media screen and (max-width: 430px) {
+  .filter {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #acffe3;
+    border-radius: 0.5rem;
+  }
+
+  .filter li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.1em;
+    cursor: pointer;
+  }
   .isi-content > img {
     border-radius: 7%;
-    height: 15rem;
+    height: 10rem;
     width: 100%;
   }
 
